@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: blueviolet;
+  background-image: url("bg.jpg");
+  background-size: contain;
+}
+
+.game-container {
+  margin-top: 50px;
+  background-color: aqua;
+  border-radius: 2vh;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  margin-bottom: 20px;
+  margin-left: 39%;
+  margin-right: 50%;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+.cell:hover {
+  background-color: #f0f0f0;
+}
+
+.status {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.reset-button {
+  font-size: 1.2em;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 1vh;
+  background-color: blue;
+  color: #f0f0f0;
+}
+
+.winning-cell {
+  background-color: yellow;
+  font-weight: bold;
+}
